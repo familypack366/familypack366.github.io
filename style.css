@@ -77,7 +77,6 @@ html {
 
 body {
   width: auto;
-  height: 100%;
   max-width: 960px;
   margin: auto;
   padding: 90px;
@@ -89,6 +88,7 @@ body {
 
 body#index {
   display: flex;
+  height: 100%;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
@@ -135,6 +135,9 @@ nav a:visited {
 nav.top a {
   padding: 2px 0;
 }
+nav.top a .arrow {
+  display: none;
+}
 nav.top a.current {
   color: #EA5918;
   border-bottom: 4px solid #EA5918;
@@ -169,6 +172,46 @@ article h2 {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 30px;
+  }
+  nav h1 {
+    float: unset;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  nav ul {
+    float: unset;
+    margin: 0;
+    text-indent: 0;
+  }
+  nav li {
+    float: unset;
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  nav a {
+    padding: 2px 0;
+  }
+  nav.top a .arrow {
+    display: unset;
+  }
+  nav.top ul {
+    display: none;
+  }
+
+  article {
+    margin-top: 40px;
+  }
+  article h1 {
+    font-size: 28px;
+  }
+  article h2 {
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
 
 /* Touch Screen */
